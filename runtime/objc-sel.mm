@@ -145,6 +145,7 @@ static SEL __sel_registerName(const char *name, int lock, int copy)
 
     if (!name) return (SEL)0;
 
+    // 查看有效选择器集合中sel是否存在
     result = search_builtins(name);
     if (result) return result;
     
@@ -159,6 +160,7 @@ static SEL __sel_registerName(const char *name, int lock, int copy)
 
     if (lock) selLock.write();
 
+    // 已经访问过的selector，根据名称进行缓存
     if (!namedSelectors) {
         namedSelectors = NXCreateMapTable(NXStrValueMapPrototype, 
                                           (unsigned)SelrefCount);

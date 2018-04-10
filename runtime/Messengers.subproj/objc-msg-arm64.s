@@ -241,28 +241,41 @@ LExit$0:
 
 .macro CacheLookup
 	// x1 = SEL, x16 = isa
+    // cache的偏移不应该是8吗？为什么是16
+    // 好吧，确实是16，父类结构体的isa指针为第一个，supercls第二个指针
 	ldp	x10, x11, [x16, #CACHE]	// x10 = buckets, x11 = occupied|mask
+    // 计算key的hash值
 	and	w12, w1, w11		// x12 = _cmd & mask
+    // 根据key获取起始可能的地址
 	add	x12, x10, x12, LSL #4	// x12 = buckets + ((_cmd & mask)<<4)
 
+    // 将selector放到x9中，IMP放到x17中
 	ldp	x9, x17, [x12]		// {x9, x17} = *bucket
 1:	cmp	x9, x1			// if (bucket->sel != _cmd)
 	b.ne	2f			//     scan more
+    // 处理查找成功逻辑
 	CacheHit $0			// call or return imp
-	
+
+    // 处理查找失败逻辑
 2:	// not hit: x12 = not-hit bucket
+    // 将第一个参数传给CheckMiss
+    // 查看sel是否为0，为0则跳转，hash表采用开放寻址法，目标bucket如果为nil说明这个地址没发生过碰撞且未设置，查找失败，否则说明产生了碰撞，继续查找
 	CheckMiss $0			// miss if bucket->sel == 0
+    // 该hash表产生碰撞从后向前查找空位
 	cmp	x12, x10		// wrap if bucket == buckets
 	b.eq	3f
+    // 向前查找，跳到1循环
 	ldp	x9, x17, [x12, #-16]!	// {x9, x17} = *--bucket
 	b	1b			// loop
 
 3:	// wrap: x12 = first bucket, w11 = mask
+    // 从表的末尾开始查找
 	add	x12, x12, w11, UXTW #4	// x12 = buckets+(mask<<4)
 
 	// Clone scanning loop to miss instead of hang when cache is corrupt.
 	// The slow path may detect any corruption and halt later.
 
+    // 重新查找
 	ldp	x9, x17, [x12]		// {x9, x17} = *bucket
 1:	cmp	x9, x1			// if (bucket->sel != _cmd)
 	b.ne	2f			//     scan more
@@ -276,6 +289,7 @@ LExit$0:
 	b	1b			// loop
 
 3:	// double wrap
+    // 查找失败
 	JumpMiss $0
 	
 .endmacro
@@ -305,23 +319,33 @@ _objc_debug_taggedpointer_ext_classes:
 	UNWIND _objc_msgSend, NoFrame
 	MESSENGER_START
 
+    // arm64通过设置最高位来标识是否是tagged pointer
 	cmp	x0, #0			// nil check and tagged pointer check
+    // 如果小于等于0说明传入的self是nil或者是tagged pointer
 	b.le	LNilOrTagged		//  (MSB tagged pointer looks negative)
+    // x0是self指针，取self的前64位(8字节)位isa指针
 	ldr	x13, [x0]		// x13 = isa
+    // 将isa指针中的非class信息通过ISA_MASK过滤出去
 	and	x16, x13, #ISA_MASK	// x16 = class	
 LGetIsaDone:
+    // 查找缓存中的方法信息
 	CacheLookup NORMAL		// calls imp or objc_msgSend_uncached
 
 LNilOrTagged:
+    // 如果是nil跳转到0处处理
 	b.eq	LReturnZero		// nil check
 
 	// tagged
 	mov	x10, #0xf000000000000000
 	cmp	x0, x10
+    // 如果self指针最高四位为1111，则为扩展的tagged pointer类
 	b.hs	LExtTag
+    // 处理系统内置的tagged pointer类，RISC指令的限制，将加载符号地址分为两部分
 	adrp	x10, _objc_debug_taggedpointer_classes@PAGE
 	add	x10, x10, _objc_debug_taggedpointer_classes@PAGEOFF
+    // 将x0的最高四位放到x11的第四位中
 	ubfx	x11, x0, #60, #4
+    // 将查找的类的地址放入到x16
 	ldr	x16, [x10, x11, LSL #3]
 	b	LGetIsaDone
 
@@ -329,7 +353,9 @@ LExtTag:
 	// ext tagged
 	adrp	x10, _objc_debug_taggedpointer_ext_classes@PAGE
 	add	x10, x10, _objc_debug_taggedpointer_ext_classes@PAGEOFF
+    // 从52位开始提取8位放入到x11
 	ubfx	x11, x0, #52, #8
+    // 将查找的类的地址放入到x16
 	ldr	x16, [x10, x11, LSL #3]
 	b	LGetIsaDone
 	
@@ -344,7 +370,7 @@ LReturnZero:
 	ret
 
 	END_ENTRY _objc_msgSend
-
+// _objc_msgSend end
 
 	ENTRY _objc_msgLookup
 	UNWIND _objc_msgLookup, NoFrame
@@ -408,6 +434,7 @@ LLookup_Nil:
 
 	// no _objc_msgLookupSuper
 
+    // meta class
 	ENTRY _objc_msgSendSuper2
 	UNWIND _objc_msgSendSuper2, NoFrame
 	MESSENGER_START

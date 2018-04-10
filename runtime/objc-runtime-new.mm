@@ -4656,6 +4656,7 @@ IMP lookUpImpOrForward(Class cls, SEL sel, id inst,
 
     // Try superclass caches and method lists.
     {
+        // 防止meta class损坏时产生自旋
         unsigned attempts = unreasonableClassCount();
         for (Class curClass = cls->superclass;
              curClass != nil;
@@ -6422,6 +6423,8 @@ disableTaggedPointers()
 
 // Returns a pointer to the class's storage in the tagged class arrays.
 // Assumes the tag is a valid basic tag.
+// 根据tag名获取目前内存中存在的taggedpointer class
+// 可扩展向内存中添加taggedpointer类，猜测自定义tag应该在OBJC_TAG_First52BitPayload = 8和OBJC_TAG_Last52BitPayload  = 263之间
 static Class *
 classSlotForBasicTagIndex(objc_tag_index_t tag)
 {

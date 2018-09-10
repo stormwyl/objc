@@ -734,7 +734,7 @@ LNilReceiver:
 .macro MethodTableLookup
 	
 	stmfd	sp!, {r0-r3,r7,lr}
-	add	r7, sp, #16
+	add	r7, sp, #16     // r7存储sp + 16
 	sub	sp, #8			// align stack
 	FP_SAVE
 

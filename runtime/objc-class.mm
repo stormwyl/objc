@@ -629,6 +629,7 @@ static void _class_resolveClassMethod(Class cls, SEL sel, id inst)
 **********************************************************************/
 static void _class_resolveInstanceMethod(Class cls, SEL sel, id inst)
 {
+    // 查看是否实现了SEL_resolveInstanceMethod方法
     if (! lookUpImpOrNil(cls->ISA(), SEL_resolveInstanceMethod, cls, 
                          NO/*initialize*/, YES/*cache*/, NO/*resolver*/)) 
     {
@@ -641,6 +642,7 @@ static void _class_resolveInstanceMethod(Class cls, SEL sel, id inst)
 
     // Cache the result (good or bad) so the resolver doesn't fire next time.
     // +resolveInstanceMethod adds to self a.k.a. cls
+    // 缓存方法
     IMP imp = lookUpImpOrNil(cls, sel, inst, 
                              NO/*initialize*/, YES/*cache*/, NO/*resolver*/);
 
@@ -671,11 +673,13 @@ static void _class_resolveInstanceMethod(Class cls, SEL sel, id inst)
 **********************************************************************/
 void _class_resolveMethod(Class cls, SEL sel, id inst)
 {
+    // 成员方法
     if (! cls->isMetaClass()) {
         // try [cls resolveInstanceMethod:sel]
         _class_resolveInstanceMethod(cls, sel, inst);
     } 
     else {
+        // 类方法
         // try [nonMetaClass resolveClassMethod:sel]
         // and [cls resolveInstanceMethod:sel]
         _class_resolveClassMethod(cls, sel, inst);

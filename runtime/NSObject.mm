@@ -819,9 +819,11 @@ class AutoreleasePoolPage
     id *add(id obj)
     {
         assert(!full());
+        // 将内存区域的属性修改为可读可写
         unprotect();
         id *ret = next;  // faster than `return next-1` because of aliasing
         *next++ = obj;
+        // 将内存区域的属性修改为只读
         protect();
         return ret;
     }
@@ -972,6 +974,7 @@ class AutoreleasePoolPage
 
     static inline id *autoreleaseFast(id obj)
     {
+        // 当前线程没有hot page，使用autoreleaseNoPage函数创建
         AutoreleasePoolPage *page = hotPage();
         if (page && !page->full()) {
             return page->add(obj);
@@ -1008,6 +1011,7 @@ class AutoreleasePoolPage
         assert(!hotPage());
 
         bool pushExtraBoundary = false;
+        // 判断是还没有初始化autoreleasepoolpage，还是刚刚初始化了一个autoreleasepool
         if (haveEmptyPoolPlaceholder()) {
             // We are pushing a second pool over the empty placeholder pool
             // or pushing the first object into the empty placeholder pool.
@@ -1016,6 +1020,7 @@ class AutoreleasePoolPage
             pushExtraBoundary = true;
         }
         else if (obj != POOL_BOUNDARY  &&  DebugMissingPools) {
+            // autoreleasepool还未初始化并且当前push的不是占位符，有可能造成内存泄漏
             // We are pushing an object with no pool in place, 
             // and no-pool debugging was requested by environment.
             _objc_inform("MISSING POOLS: (%p) Object %p of class %s "
@@ -1030,6 +1035,7 @@ class AutoreleasePoolPage
             // We are pushing a pool with no pool in place,
             // and alloc-per-pool debugging was not requested.
             // Install and return the empty pool placeholder.
+            // 没有调试pool初始化的需要
             return setEmptyPoolPlaceholder();
         }
 

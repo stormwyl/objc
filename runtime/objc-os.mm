@@ -879,7 +879,9 @@ void _objc_init(void)
     initialized = true;
     
     // fixme defer initialization until an objc-using image is found?
+    // 根据环境变量值确定一些信息（例如是否是调试模式等）
     environ_init();
+    // 初始化线程局部存储
     tls_init();
     static_init();
     lock_init();

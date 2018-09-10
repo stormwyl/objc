@@ -258,6 +258,7 @@ void environ_init(void)
         {
             maybeMallocDebugging = true;
         }
+        printf("_NSGetEnviron--%s\n",*p);
 
         if (0 != strncmp(*p, "OBJC_", 5)) continue;
         

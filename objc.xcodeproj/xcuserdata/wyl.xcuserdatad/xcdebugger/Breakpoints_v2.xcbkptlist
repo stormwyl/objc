@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.h"
-            timestampString = "545032183.019318"
+            timestampString = "548927181.995037"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1278"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.h"
-            timestampString = "545032183.019437"
+            timestampString = "548927181.995847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1282"
@@ -42,29 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.h"
-            timestampString = "545032183.019527"
+            timestampString = "548927181.996191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1273"
             endingLineNumber = "1273"
             landmarkName = "objc_class"
             landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "runtime/objc-os.mm"
-            timestampString = "542783678.6366481"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "877"
-            endingLineNumber = "877"
-            landmarkName = "_objc_init(void)"
-            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-private.h"
-            timestampString = "545040118.61919"
+            timestampString = "548926233.51372"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "877"
@@ -153,7 +137,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-private.h"
-            timestampString = "545040118.6192549"
+            timestampString = "548926233.513785"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "945"
@@ -201,7 +185,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-private.h"
-            timestampString = "545040118.619303"
+            timestampString = "548926233.513835"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "965"
@@ -265,11 +249,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-object.h"
-            timestampString = "544952533.753442"
+            timestampString = "548927181.996629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "695"
-            endingLineNumber = "695"
+            startingLineNumber = "702"
+            endingLineNumber = "702"
             landmarkName = "objc_object::autorelease()"
             landmarkType = "7">
          </BreakpointContent>
@@ -277,48 +261,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "runtime/NSObject.mm"
-            timestampString = "544954979.5542229"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1666"
-            endingLineNumber = "1666"
-            landmarkName = "objc_autorelease(id obj)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "runtime/objc-object.h"
-            timestampString = "544952533.753832"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "461"
-            endingLineNumber = "461"
-            landmarkName = "objc_object::rootRetain()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/NSObject.mm"
-            timestampString = "544954979.5543751"
+            timestampString = "548926420.693398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2283"
-            endingLineNumber = "2283"
-            landmarkName = "-retain"
+            startingLineNumber = "2285"
+            endingLineNumber = "2285"
+            landmarkName = "+retain"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -329,7 +281,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-object.h"
-            timestampString = "544952533.754159"
+            timestampString = "548927181.996924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -357,78 +309,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "runtime/objc-object.h"
-            timestampString = "544952533.754413"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467"
-            landmarkName = "objc_object::rootTryRetain()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "objc_loadWeakRetained"
-                  moduleName = "libobjc.A.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
-                  timestampString = "545040119.320312"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "467"
-                  endingLineNumber = "467"
-                  offsetFromSymbolStart = "1233">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_objc_rootTryRetain"
-                  moduleName = "libobjc.A.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
-                  timestampString = "545040119.322865"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "467"
-                  endingLineNumber = "467"
-                  offsetFromSymbolStart = "997">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NSObject _tryRetain]"
-                  moduleName = "libobjc.A.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
-                  timestampString = "545040119.325021"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "467"
-                  endingLineNumber = "467"
-                  offsetFromSymbolStart = "942">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-object.h"
-            timestampString = "544952533.754651"
+            timestampString = "548927181.99701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
+            startingLineNumber = "491"
+            endingLineNumber = "491"
             landmarkName = "objc_object::rootRetain(bool tryRetain, bool handleOverflow)"
             landmarkType = "7">
             <Locations>
@@ -547,7 +436,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.mm"
-            timestampString = "545040118.619554"
+            timestampString = "549946383.173432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6432"
@@ -563,7 +452,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.mm"
-            timestampString = "545040118.619607"
+            timestampString = "549946383.173491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6434"
@@ -579,13 +468,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.mm"
-            timestampString = "545040118.6196541"
+            timestampString = "549946383.173533"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6444"
             endingLineNumber = "6444"
-            landmarkName = "classSlotForTagIndex(objc_tag_index_t tag)"
-            landmarkType = "9">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -607,16 +496,539 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.mm"
+            timestampString = "549946383.1736"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1721"
+            endingLineNumber = "1721"
+            landmarkName = "realizeClass(Class cls)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.mm"
+            timestampString = "549946383.1736439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "737"
+            endingLineNumber = "737"
+            landmarkName = "methodizeClass(Class cls)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.mm"
+            timestampString = "549946383.173685"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1832"
+            endingLineNumber = "1832"
+            landmarkName = "realizeClass(Class cls)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.mm"
+            timestampString = "549946383.173725"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2541"
+            endingLineNumber = "2541"
+            landmarkName = "_read_images(header_info **hList, uint32_t hCount, int totalClasses, int unoptimizedTotalClasses)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-os.mm"
+            timestampString = "548321279.767382"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "891"
+            endingLineNumber = "891"
+            landmarkName = "_objc_init(void)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/NSObject.mm"
+            timestampString = "548926420.693931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "951"
+            endingLineNumber = "951"
+            landmarkName = "hotPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/NSObject.mm"
+            timestampString = "548926420.69398"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1011"
+            endingLineNumber = "1011"
+            landmarkName = "autoreleaseNoPage(id obj)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "runtime/objc-runtime-new.h"
-            timestampString = "545032939.621376"
+            filePath = "debug-objc/main.m"
+            timestampString = "549946383.173829"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1068"
-            endingLineNumber = "1068"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-init"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime.mm"
+            timestampString = "546429169.579581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
+            landmarkName = "environ_init(void)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime.mm"
+            timestampString = "546429169.579633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "423"
+            endingLineNumber = "423"
+            landmarkName = "tls_init(void)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-os.mm"
+            timestampString = "548321279.7682689"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "634"
+            endingLineNumber = "634"
+            landmarkName = "static_init()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-private.h"
+            timestampString = "548926233.5156831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "954"
+            endingLineNumber = "954"
+            landmarkName = "disguise(T* ptr)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DisguisedPtr&lt;objc_object&gt;::disguise(objc_object*)"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-private.h"
+                  timestampString = "548127146.153054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "954"
+                  endingLineNumber = "954"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DisguisedPtr&lt;objc_object*&gt;::disguise(objc_object**)"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-private.h"
+                  timestampString = "548127146.155622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "954"
+                  endingLineNumber = "954"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-old.mm"
+            timestampString = "548127145.7540801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2163"
+            endingLineNumber = "2163"
+            landmarkName = "map_images(unsigned count, const char * const paths[], const struct mach_header * const mhdrs[])"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "debug-objc/main.m"
+            timestampString = "549946383.174245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "main"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-object.h"
+            timestampString = "548927181.997988"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "480"
+            endingLineNumber = "480"
+            landmarkName = "objc_object::rootRetain(bool tryRetain, bool handleOverflow)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_objc_rootRetain"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.060297"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_loadWeakRetained"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.063215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "353">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_object::retain()"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.066877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_objc_rootTryRetain"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.069809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[NSObject retain]"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.072866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[NSObject _tryRetain]"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.075366"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "objc_object::rootRetain_overflow(bool)"
+                  moduleName = "libobjc.A.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wyl/workspace/objc/runtime/objc-object.h"
+                  timestampString = "548300149.077826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "473"
+                  endingLineNumber = "473"
+                  offsetFromSymbolStart = "59">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "debug-objc/main.m"
+            timestampString = "549946383.17448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "main"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/NSObject.mm"
+            timestampString = "548926420.695103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1039"
+            endingLineNumber = "1039"
+            landmarkName = "autoreleaseNoPage(id obj)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-cache.mm"
+            timestampString = "548927181.998113"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "501"
+            endingLineNumber = "501"
+            landmarkName = "cache_t::find(cache_key_t k, id receiver)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-object.h"
+            timestampString = "548927181.99832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "objc_object::ISA()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "548927181.998377"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1198"
+            endingLineNumber = "1198"
             landmarkName = "objc_class"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "548927181.998733"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1202"
+            endingLineNumber = "1202"
+            landmarkName = "objc_class"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "548933465.687812"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "852"
+            endingLineNumber = "852"
+            landmarkName = "class_data_bits_t"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "548933476.542719"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "823"
+            endingLineNumber = "823"
+            landmarkName = "class_rw_t"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "548933478.046626"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "828"
+            endingLineNumber = "828"
+            landmarkName = "class_rw_t"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "548933479.478561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "836"
+            endingLineNumber = "836"
+            landmarkName = "class_rw_t"
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
@@ -627,12 +1039,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runtime/objc-runtime-new.mm"
-            timestampString = "545040129.865788"
+            timestampString = "549946383.174866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4573"
-            endingLineNumber = "4573"
-            landmarkName = "_class_lookupMethodAndLoadCache3(id obj, SEL sel, Class cls)"
+            startingLineNumber = "3946"
+            endingLineNumber = "3946"
+            landmarkName = "class_copyMethodList(Class cls, unsigned int *outCount)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -642,14 +1054,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "runtime/objc-runtime-new.mm"
-            timestampString = "545040223.1908979"
+            filePath = "debug-objc/main.m"
+            timestampString = "549946433.830314"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4593"
-            endingLineNumber = "4593"
-            landmarkName = "lookUpImpOrForward(Class cls, SEL sel, id inst, bool initialize, bool cache, bool resolver)"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "main"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "549946510.7300611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1073"
+            endingLineNumber = "1073"
+            landmarkName = "objc_class"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runtime/objc-runtime-new.h"
+            timestampString = "549946530.913087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "898"
+            endingLineNumber = "898"
+            landmarkName = "class_data_bits_t"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

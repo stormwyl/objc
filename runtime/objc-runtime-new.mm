@@ -4671,6 +4671,7 @@ IMP lookUpImpOrForward(Class cls, SEL sel, id inst,
             imp = cache_getImp(curClass, sel);
             if (imp) {
                 if (imp != (IMP)_objc_msgForward_impcache) {
+                    // 在当前class结构体中缓存方法
                     // Found the method in a superclass. Cache it in this class.
                     log_and_fill_cache(cls, imp, sel, inst, curClass);
                     goto done;
@@ -4697,6 +4698,7 @@ IMP lookUpImpOrForward(Class cls, SEL sel, id inst,
 
     if (resolver  &&  !triedResolver) {
         runtimeLock.unlockRead();
+        // 执行 +resolveClassMethod 或者 +resolveInstanceMethod去注册未找到的方法
         _class_resolveMethod(cls, sel, inst);
         runtimeLock.read();
         // Don't cache the result; we don't hold the lock so it may have 
@@ -4708,6 +4710,7 @@ IMP lookUpImpOrForward(Class cls, SEL sel, id inst,
     // No implementation found, and method resolver didn't help. 
     // Use forwarding.
 
+    // 直接调用_objc_msgForward方法
     imp = (IMP)_objc_msgForward_impcache;
     cache_fill(cls, sel, imp, inst);
 

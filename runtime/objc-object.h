@@ -150,7 +150,14 @@ objc_object::isExtTaggedPointer()
 inline Class 
 objc_object::ISA() 
 {
-    assert(!isTaggedPointer()); 
+    assert(!isTaggedPointer());
+//    __ARM_ARCH_7K__ 这个宏的信息在网上完全找不到，
+//    但是我们可以发现在 Xcode 中，
+//    watchOS 的 valid architectures 是 armv7k，
+//    所以 __ARM_ARCH_7K__ 应该是在 Apple Watch 上的架构，
+//    并且可能它与 Apple Watch 的代数是有关系的（第一代和第二代）。
+//    因此 SUPPORT_INDEXED_ISA 这个所谓的 indexed isa，
+//    应该是对 watchOS 的优化（记忆中 Apple 有提及对 watchOS 进行过优化，我猜这也是一项了）。
 #if SUPPORT_INDEXED_ISA
     if (isa.nonpointer) {
         uintptr_t slot = isa.indexcls;

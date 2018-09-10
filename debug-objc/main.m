@@ -7,44 +7,67 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 typedef struct kk{
     unsigned int a : 2;
     unsigned int b : 30;
 }kk;
 
+extern id
+objc_loadWeakRetained(id *location);
+
+extern id
+objc_loadWeak(id *location);
+
+@interface myObject : NSObject
+
+@property (nonatomic, copy) NSString *obj2;
+@property (nonatomic, copy) NSString *obj1;
+
+- (void)hello;
+
+@end
+
+@implementation myObject
+
+- (instancetype)init{
+    if (self = [super init]) {
+        self->_obj1 = [NSString stringWithFormat:@"23423234234"];
+        self->_obj2 = [NSString stringWithFormat:@"dfgertrtewrtew"];
+    }
+    return self;
+}
+
+- (void)hello{
+    NSLog(@"hello");
+}
+
+@end
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
 //        NSLog(@"Hello, World!");
-        size_t size = sizeof(Class);
-        Class cls = [NSObject class];
+//        myObject *obj = [[myObject alloc] init];
+//        int a = ~15;
+        __block int b = 22;
+        void (^testBlock)(int) = ^(int a){
+            printf("%d",b);
+        };
+        unsigned int n ;
+        Method *me = class_copyMethodList([testBlock class], &n);
         
-        NSString *str = [NSString stringWithFormat:@"asd"];
-//        cls.ISA();
+        Ivar *ivar = class_copyIvarList([testBlock class], &n);
         NSObject *obj = [[NSObject alloc] init];
-        [obj run];
-//        for (int i = 0; i < 256; i++) {
-//            [obj retain];
-//        }
-//        [obj retainCount];
-//        int *a = nil;
-////        kk b;
-////        b.a = 0b10;
-////        b.b = 0x3;
-//
-////        __weak NSObject *weakObj = obj;
-//////        obj = nil;
-////        __weak NSObject *weakObj1 = obj;
-////        __weak NSObject *weakObj2 = obj;
-////        __weak NSObject *weakObj3 = obj;
-////        __weak NSObject *weakObj4 = obj;
-//        NSLog(@"%p",obj);
-//        for (int i = 0; i < 128; i++) {
-//            [obj release];
-//        }
-//        [obj release];
-//        [obj release];
+        NSObject * __weak weakObj = obj;
+        NSObject *obj1 = objc_loadWeak(&obj);
+        NSLog(@"");
+//        printf(@"aaaaaaa-%d",a);
+        NSLog(@"%p",[myObject class]);
+//        obj->_obj1 = [NSString stringWithFormat:@"23423234234"];
+//        obj->_obj2 = [NSString stringWithFormat:@"dfgertrtewrtew"];
+        
     }
     return 0;
 }
